@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🍔 Online Food Ordering System</h1>
+
+<div class="menu">
+    <div class="card">
+        <h3>Burger</h3>
+        <p>₹100</p>
+        <button onclick="addToCart('Burger',100)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Pizza</h3>
+        <p>₹200</p>
+        <button onclick="addToCart('Pizza',200)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Sandwich</h3>
+        <p>₹80</p>
+        <button onclick="addToCart('Sandwich',80)">Add to Cart</button>
+    </div>
+</div>
+
+<h2>🛒 Cart</h2>
+<ul id="cart"></ul>
+
+<h3 id="total">Total: ₹0</h3>
+
+<button onclick="placeOrder()">Place Order</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
